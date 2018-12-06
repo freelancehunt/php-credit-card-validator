@@ -24,7 +24,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "lib-pcre": ">=8.37",
+        "lib-pcre": ">=8.38",
         "ext-ctype": "*"
     },
     "require-dev": {

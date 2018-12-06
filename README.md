@@ -16,7 +16,7 @@ Require the package in `composer.json`
 
 ```json
 "require": {
-    "freelancehunt/php-credit-card-validator": "1.*"
+    "freelancehunt/php-credit-card-validator": "2.*"
 },
 ```
 ## Usage
