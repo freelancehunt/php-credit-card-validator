@@ -72,6 +72,10 @@ class CreditCardTest extends \PHPUnit\Framework\TestCase
             '3530111333300000',
             '3566002020360505',
         ],
+        CreditCard::TYPE_ELO => [
+            '4389351648020055',
+            '6362970000457013',
+        ],
     ];
 
     public function testCardsTypes()
