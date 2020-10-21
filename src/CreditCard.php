@@ -58,20 +58,6 @@ class CreditCard
             'luhn'      => true,
         ],
         // Credit cards
-        self::TYPE_VISA               => [
-            'type'      => self::TYPE_VISA,
-            'pattern'   => '/^4/',
-            'length'    => [13, 16, 19],
-            'cvcLength' => [3],
-            'luhn'      => true,
-        ],
-        self::TYPE_MASTERCARD         => [
-            'type'      => self::TYPE_MASTERCARD,
-            'pattern'   => '/^(5[0-5]|(222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720))/', // 2221-2720, 51-55
-            'length'    => [16],
-            'cvcLength' => [3],
-            'luhn'      => true,
-        ],
         self::TYPE_AMEX               => [
             'type'      => self::TYPE_AMEX,
             'pattern'   => '/^3[47]/',
@@ -104,6 +90,20 @@ class CreditCard
         self::TYPE_JCB                => [
             'type'      => self::TYPE_JCB,
             'pattern'   => '/^35/',
+            'length'    => [16],
+            'cvcLength' => [3],
+            'luhn'      => true,
+        ],
+        self::TYPE_VISA               => [
+            'type'      => self::TYPE_VISA,
+            'pattern'   => '/^4/',
+            'length'    => [13, 16, 19],
+            'cvcLength' => [3],
+            'luhn'      => true,
+        ],
+        self::TYPE_MASTERCARD         => [
+            'type'      => self::TYPE_MASTERCARD,
+            'pattern'   => '/^(5[0-5]|(222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720))/', // 2221-2720, 51-55
             'length'    => [16],
             'cvcLength' => [3],
             'luhn'      => true,
