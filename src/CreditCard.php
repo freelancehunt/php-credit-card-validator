@@ -14,18 +14,18 @@ namespace Freelancehunt\Validators;
  */
 class CreditCard
 {
-    const TYPE_AMEX               = 'amex';
-    const TYPE_DANKORT            = 'dankort';
-    const TYPE_DINERS_CLUB        = 'diners_club';
-    const TYPE_DISCOVER           = 'discover';
-    const TYPE_FORBRUGSFORENINGEN = 'forbrugsforeningen';
-    const TYPE_JCB                = 'jcb';
-    const TYPE_MAESTRO            = 'maestro';
-    const TYPE_MASTERCARD         = 'mastercard';
-    const TYPE_UNIONPAY           = 'unionpay';
-    const TYPE_VISA               = 'visa';
-    const TYPE_VISA_ELECTRON      = 'visa_electron';
-    const TYPE_ELO                = 'elo';
+    public const TYPE_AMEX               = 'amex';
+    public const TYPE_DANKORT            = 'dankort';
+    public const TYPE_DINERS_CLUB        = 'diners_club';
+    public const TYPE_DISCOVER           = 'discover';
+    public const TYPE_FORBRUGSFORENINGEN = 'forbrugsforeningen';
+    public const TYPE_JCB                = 'jcb';
+    public const TYPE_MAESTRO            = 'maestro';
+    public const TYPE_MASTERCARD         = 'mastercard';
+    public const TYPE_UNIONPAY           = 'unionpay';
+    public const TYPE_VISA               = 'visa';
+    public const TYPE_VISA_ELECTRON      = 'visa_electron';
+    public const TYPE_ELO                = 'elo';
 
     protected static $cards = [
         // Debit cards must come first, since they have more specific patterns than their credit-card equivalents.
