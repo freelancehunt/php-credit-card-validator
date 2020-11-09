@@ -39,7 +39,7 @@ class CreditCard
         ],
         self::TYPE_MAESTRO            => [
             'type'      => self::TYPE_MAESTRO,
-            'pattern'   => '/^(5(018|0[23]|[68])|6(39|7))/',
+            'pattern'   => '/^(5(018|0[23]|[68])|6(3|7))/',
             'length'    => [12, 13, 14, 15, 16, 17, 18, 19],
             'cvcLength' => [3],
             'luhn'      => true,
