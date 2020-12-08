@@ -25,6 +25,7 @@ class CreditCard
     const TYPE_UNIONPAY           = 'unionpay';
     const TYPE_VISA               = 'visa';
     const TYPE_VISA_ELECTRON      = 'visa_electron';
+    const TYPE_ELO                = 'elo';
 
     protected static $cards = [
         // Debit cards must come first, since they have more specific patterns than their credit-card equivalents.
@@ -104,6 +105,13 @@ class CreditCard
         self::TYPE_JCB                => [
             'type'      => self::TYPE_JCB,
             'pattern'   => '/^35/',
+            'length'    => [16],
+            'cvcLength' => [3],
+            'luhn'      => true,
+        ],
+        self::TYPE_ELO                => [
+            'type'      => self::TYPE_ELO,
+            'pattern'   => '/^4011|438935|45(1416|76)|50(4175|6699|67|90[4-7])|63(6297|6368)/',
             'length'    => [16],
             'cvcLength' => [3],
             'luhn'      => true,
